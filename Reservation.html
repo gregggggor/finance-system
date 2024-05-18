@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <style>
+       .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Adjust the last value for opacity */
+            padding: 1px;
+            border-radius: 20px;
+            width: 50%;
+            /* Adjust container width */
+            margin: 0 auto;
+            text-align: center;
+            /* Center the contents of the container */
+            
+        }
+
+        body {
+            background-image: url('https://images.pexels.com/photos/7598115/pexels-photo-7598115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* Set a fallback font */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </header>
+
+    <div class="container">
+        <h1>Hotel Booking form</h1>
+        <h2>Reservation Details</h2>
+        <form>
+            <div class="form-container">
+    <form action="submit_booking.php" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="lname" id="lname" name="lname"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="phone" id="phone" name="phone"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="checkin">Check-In Date:</label><br>
+        <input type="date" id="checkin" name="checkin"><br>
+        <label for="checkout">Check-Out Date:</label><br>
+        <input type="date" id="checkout" name="checkout"><br>
+        <label for="guests">Number of Guests:</label><br>
+        <select id="guests" name="guests">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <label for="caravan">Caravan Type:</label><br>
+        <select id="caravan" name="caravan">
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+        </select><br>  
+        <label for="Adult">Adult:</label><br>
+        <select id="adult" name="adult">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <label for="children">Children:</label><br>
+        <select id="children" name="children">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br>
+        <input type="checkbox" id="terms" name="terms" value="I agree to the terms and conditions.">
+        <label for="terms"> I agree to the terms and conditions.</label><br>
+        <input type="submit" value="Submit Booking Request">
+    </form>
+</div>
+
+    </div>
+</body>
+
+</html>
